@@ -18,6 +18,8 @@ namespace InstituteManagment.Domain.Entities
         public string PhoneNumber { get; set; }
         public string Bio { get; set; }
         public string Address { get; set; }
+        public DateTime Birthday { get; set; }
+        public int Gender { get; set; }
 
     }
 }
