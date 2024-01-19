@@ -7,22 +7,6 @@
       <FileName>Common\AuditableEntity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InstituteManagment.Domain.Entities.Course">
-    <Position X="8.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>gAGAAAAAAgAkgAAgAAAECAAAEAAAACBAAAAIAAEAAAA=</HashCode>
-      <FileName>Entities\Course.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Department" />
-      <Property Name="Teacher" />
-      <Property Name="Fee" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Enrollments" />
-      <Property Name="Childrens" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="InstituteManagment.Domain.Entities.Department">
     <Position X="5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
@@ -32,29 +16,24 @@
     <ShowAsCollectionAssociation>
       <Property Name="Students" />
       <Property Name="Teachers" />
-      <Property Name="Courses" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="InstituteManagment.Domain.Entities.Enrollment">
     <Position X="14.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAAIAAACAAA=</HashCode>
+      <HashCode>CAAGAAAAQAAAAAAAAIAAAAgAAAAAAAAAAAAIAAECAAQ=</HashCode>
       <FileName>Entities\Enrollment.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Course" />
       <Property Name="Student" />
     </ShowAsAssociation>
   </Class>
   <Class Name="InstituteManagment.Domain.Entities.Fee">
     <Position X="11" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAgAAAgACAAAAAAAAAAAAAAAAgAAgAAABAAAAQ=</HashCode>
       <FileName>Entities\Fee.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Courses" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="InstituteManagment.Domain.Entities.Role">
     <Position X="13" Y="0.75" Width="1.5" />
@@ -87,9 +66,6 @@
     <ShowAsAssociation>
       <Property Name="Department" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Courses" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="InstituteManagment.Domain.Entities.User">
     <Position X="10" Y="0.5" Width="1.5" />
@@ -98,19 +74,13 @@
       <FileName>Entities\User.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InstituteManagment.Domain.Entities.SubjectOfArea">
+  <Class Name="InstituteManagment.Domain.Entities.Course">
     <Position X="9.25" Y="12" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAQAAAAAAAAIAAAAAAEAAAAAAAAQAAAAAAEAA=</HashCode>
-      <FileName>Entities\SubjectOfArea.cs</FileName>
+      <HashCode>gAGAAgAAAgAkgAAgAAAECAAkEAAAACBAAAAIAAAAAAA=</HashCode>
+      <FileName>Entities\Course.cs</FileName>
+      <NewMemberFileName>Entities\SubjectOfArea.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Department" />
-      <Property Name="Enrollment" />
-      <Property Name="Student" />
-      <Property Name="Teacher" />
-      <Property Name="Course" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
