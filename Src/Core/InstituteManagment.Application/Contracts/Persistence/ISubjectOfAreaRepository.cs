@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InstituteManagment.Application.Contracts.Persistence
 {
-    internal interface ISubjectOfAreaRepository:IAsyncRepository<SubjectOfArea>
+    public interface ISubjectOfAreaRepository:IAsyncRepository<SubjectOfArea>
     {
     }
 }

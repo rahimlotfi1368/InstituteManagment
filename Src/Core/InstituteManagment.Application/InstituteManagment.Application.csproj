@@ -11,6 +11,7 @@
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Features\Course\Commands\" />
+    <Folder Include="Features\SubjectOfArea\Commands\" />
     <Folder Include="Models\" />
     <Folder Include="Responses\" />
     <Folder Include="Profils\" />

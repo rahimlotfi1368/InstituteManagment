@@ -12,6 +12,7 @@ namespace InstituteManagment.Domain.Entities
         public int Credits { get; set; }
         public string Description { get; set; }
         public string CourseName { get; set; }
+        public string CourseImage { get; set; }
         public string CoursePopularity { get; set; }
         public float PassGrade { get; set; }
         public int EnrollmentCapacity { get; set; }
