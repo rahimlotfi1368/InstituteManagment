@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using InstituteManagment.Application.Contracts.Persistence;
+using InstituteManagment.Application.Dtos.SubjectOfAreas;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System;

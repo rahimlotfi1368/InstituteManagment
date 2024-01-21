@@ -20,7 +20,8 @@ namespace InstituteManagment.Application.Features.Course.Queries.GetAllCourses
         public int EnrollmentCapacity { get; set; }
         public string DepartmentName { get; set; }       
         public string TeacherName { get; set; }            
-        public ICollection<CourseOutPutDto> Prerequisites { get; set; }
         public Decimal FeeAmount { get; set; }
+        public ICollection<CourseOutPutDto> Prerequisites { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
     }
 }

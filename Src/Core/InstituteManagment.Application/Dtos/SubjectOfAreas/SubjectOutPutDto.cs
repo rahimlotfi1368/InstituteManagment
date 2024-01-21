@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstituteManagment.Application.Features.SubjectOfArea.Queries.GetAllSubjects
+namespace InstituteManagment.Application.Dtos.SubjectOfAreas
 {
     public class SubjectOutPutDto
     {

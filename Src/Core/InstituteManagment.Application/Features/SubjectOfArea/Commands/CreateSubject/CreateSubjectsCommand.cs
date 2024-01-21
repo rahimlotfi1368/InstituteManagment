@@ -6,9 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstituteManagment.Application.Features.SubjectOfArea.Queries.GetAllSubjects
+namespace InstituteManagment.Application.Features.SubjectOfArea.Commands.CreateSubject
 {
-    public class GetSubjectsQuery:IRequest<List<SubjectOutPutDto>>
+    public class CreateSubjectsCommand:IRequest<Guid>
     {
+        public string? SubjectOfAreaName { get; set; }
     }
 }
