@@ -13,13 +13,14 @@ namespace InstituteManagment.Domain.Entities
 
         public Department Department { get; set; }
 
-        public Student Student { get; set; }
+        public ICollection<Student> Students { get; set; }
 
-        public Teacher Teacher { get; set; }
+        public ICollection<Teacher> Teachers { get; set; }
 
-        public Course Course { get; set; }
+        public ICollection<Course> Courses { get; set; }
                
-        public Enrollment Enrollment { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<News>  NewsList { get; set; }
 
         
     }

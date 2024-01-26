@@ -21,5 +21,9 @@ namespace InstituteManagment.Domain.Entities
         public DateTime Birthday { get; set; }
         public int Gender { get; set; }
 
+        public ICollection<News> News { get; set; }
+
+        public ICollection<Comment> Comments { get; set; }
+
     }
 }

@@ -17,6 +17,7 @@ namespace InstituteManagment.Domain.Entities
 
         public ICollection<Course> Courses { get; set; }
 
+        public SubjectOfArea SubjectOfArea { get; set; }
         public Guid SubjectOfAreaId { get; set; }
     }
 }

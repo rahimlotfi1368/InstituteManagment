@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstituteManagment.Application.Features.Course.Queries.GetAllCourses
+namespace InstituteManagment.Application.Dtos.Courses
 {
     public class CourseOutPutDto
     {
@@ -18,9 +18,9 @@ namespace InstituteManagment.Application.Features.Course.Queries.GetAllCourses
         public string CoursePopularity { get; set; }
         public float PassGrade { get; set; }
         public int EnrollmentCapacity { get; set; }
-        public string DepartmentName { get; set; }       
-        public string TeacherName { get; set; }            
-        public Decimal FeeAmount { get; set; }
+        public string DepartmentName { get; set; }
+        public string TeacherName { get; set; }
+        public decimal FeeAmount { get; set; }
         public ICollection<CourseOutPutDto> Prerequisites { get; set; }
         public ICollection<Enrollment> Enrollments { get; set; }
     }

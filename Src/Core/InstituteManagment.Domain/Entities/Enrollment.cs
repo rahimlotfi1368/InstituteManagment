@@ -15,7 +15,9 @@ namespace InstituteManagment.Domain.Entities
         public Guid StudentId { get; set; }
         public Student Student { get; set; }
 
+        public SubjectOfArea SubjectOfArea { get; set; }
         public Guid SubjectOfAreaId { get; set; }
+
         public DateTime EnrollmentDate { get; set; }
         public int EnrollmentStatus { get; set; }
         public int EnrollmentPassStatus { get; set; }

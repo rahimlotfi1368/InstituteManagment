@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using InstituteManagment.Application.Contracts.Persistence;
+using InstituteManagment.Application.Dtos.Courses;
 using MediatR;
 using System;
 using System.Collections.Generic;

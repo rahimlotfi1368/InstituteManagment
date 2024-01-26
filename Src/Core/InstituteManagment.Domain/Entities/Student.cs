@@ -16,6 +16,7 @@ namespace InstituteManagment.Domain.Entities
 
         public ICollection<Enrollment> Enrollments { get; set; }
 
+        public SubjectOfArea SubjectOfArea { get; set; }
         public Guid SubjectOfAreaId { get; set; }
     }
 }

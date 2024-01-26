@@ -18,7 +18,7 @@ namespace InstituteManagment.Domain.Entities
         public int EnrollmentCapacity { get; set; }
         public Guid DepartmentId { get; set; }
         public Department Department { get; set; }
-
+        
         public Guid TeacherId { get; set; }
         public Teacher Teacher { get; set; }
 
@@ -29,9 +29,11 @@ namespace InstituteManagment.Domain.Entities
         public Guid FeeId { get; set; }
         public Fee Fee { get; set; }
 
+        public SubjectOfArea SubjectOfArea { get; set; }
         public Guid SubjectOfAreaId { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<Comment> Comments { get; set; }
 
     }
 }

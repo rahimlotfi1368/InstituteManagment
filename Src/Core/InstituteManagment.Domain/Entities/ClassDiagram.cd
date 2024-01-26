@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InstituteManagment.Domain.Entities.Comment">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEFAAAABAAgAAAAAIAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Course">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAGAAgAAAgAkgAEgAAAECACkEAAAACBAAAAIAAAAIAA=</HashCode>
+      <FileName>Entities\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Common.AuditableEntity" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
+      <FileName>Common\AuditableEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Department">
+    <Position X="15.25" Y="7.25" Width="1.5" />
+    <InheritanceLine Type="InstituteManagment.Domain.Common.AuditableEntity" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="5.062" />
+        <Point X="13.5" Y="6.875" />
+        <Point X="16.25" Y="6.875" />
+        <Point X="16.25" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAACAAAQAAAAAAAAAACAQAIAhAAQAA=</HashCode>
+      <FileName>Entities\Department.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Students" />
+      <Property Name="Courses" />
+      <Property Name="Teachers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Enrollment">
+    <Position X="18.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAGAAAAQAAAAAEAAIAAAAgAAAAAAAAAAAAIAAECAAQ=</HashCode>
+      <FileName>Entities\Enrollment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Fee">
+    <Position X="13.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAgACAAAAAAAAAAAAAAAAgAAgAAABAAAAQ=</HashCode>
+      <FileName>Entities\Fee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.News" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAEEAAAABAAgAAIAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>Entities\News.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Role" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
+      <FileName>Entities\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Student">
+    <Position X="25.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAgAEAAAAAAAAAEAAAACAAEAAIAAAAAAA=</HashCode>
+      <FileName>Entities\Student.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Enrollments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.SubjectOfArea">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAEAAIACAAAAAAAhAAEAA=</HashCode>
+      <FileName>Entities\SubjectOfArea.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Courses" />
+      <Property Name="Enrollments" />
+      <Property Name="NewsList" />
+      <Property Name="Students" />
+      <Property Name="Teachers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.Teacher">
+    <Position X="22.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAEABAAAAAAAEAAAAAAAAAAYABAAQAA=</HashCode>
+      <FileName>Entities\Teacher.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Courses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InstituteManagment.Domain.Entities.User" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAACQAAAAAAACCCAAAQAAAAAAIAAACAgAAAAAAIAE=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
