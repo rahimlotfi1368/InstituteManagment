@@ -1,14 +1,23 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link href="~/lib/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap-icons\font\bootstrap-icons.min.css" rel="stylesheet" />
+        <link href="~/lib/css/Styles.css" rel="stylesheet" />
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
         <h1>Layout</h1>
         @RenderBody()
-    </div>
-</body>
+        <script type="text/javascript" src="@(Url.Content("~/lib/scripts/jquery/jquery.min.js"))"></script>
+        <script type="text/javascript" src="@(Url.Content("~/lib/scripts/jquery-validate/jquery.validate.min.js"))"></script>
+        <script type="text/javascript" src="@(Url.Content("~/lib/scripts/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"))"></script>
+        @* <script type="text/javascript" src= src="@(Url.Content("~/lib/css/bootstrap/js/bootstrap.min.js"))"></script> *@
+        <script type="text/javascript" src="@(Url.Content("~/lib/scripts/Scripts.js"))"></script>
+        @(RenderSection("Scripts",required:false))
+    </body>
 </html>
